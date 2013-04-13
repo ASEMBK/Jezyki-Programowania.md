@@ -1,1 +1,1 @@
-Języki Programowania - Wykład 2.
+Języki Programowania - Wykład 1.
