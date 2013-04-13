@@ -3,6 +3,7 @@ Treść zadania pierwszego:
 
 "Wypisz liczby całkowite od 0 do 23 za pomocą pętli for, while i do-while."
 
+    ```c
     pętla for:
 
 #include <stdio.h>
@@ -285,3 +286,4 @@ for(i=1;i<=13;i++)  {
 getchar();
 return 0;
 }
+```c
