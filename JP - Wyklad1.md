@@ -1,3 +1,6 @@
+Wyklad 1
+
+
 ### Treść zadania 1
 Napisz funkcję obliczającą pole kuli o podanym promieniu.
 ```c
