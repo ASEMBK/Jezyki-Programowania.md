@@ -1,4 +1,4 @@
-Wyklad 1
+WYKLAD I
 
 
 ### Treść zadania 1
