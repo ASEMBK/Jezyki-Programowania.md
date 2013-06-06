@@ -183,13 +183,13 @@ const char *liczbaSlownie(unsigned int liczba, char *slownie)
 
 double procent_skladany (double kwota, double oprocent, int okres_kapit, int okres_lokaty)
 {
-	double ilosc_kapit = 12.0 / okres_kapit;
-	double okres_lokaty_lata = okres_lokaty/12.0;
-	double oprocent_ulamek = oprocent/100.0;
+  double ilosc_kapit = 12.0 / okres_kapit;
+  double okres_lokaty_lata = okres_lokaty / 12.0;
+  double oprocent_ulamek = oprocent / 100.0;
 	
-	double kwota_koncowa = kwota * pow(1+oprocent_ulamek/ilosc_kapit, okres_lokaty_lata*ilosc_kapit);
+  double kwota_koncowa = kwota * pow( 1.0 + oprocent_ulamek / ilosc_kapit, okres_lokaty_lata * ilosc_kapit);
 	
-	return kwota_koncowa;
+  return kwota_koncowa;
 	
 }
 
@@ -213,7 +213,7 @@ int main(void)
   kwota_koncowa_grosze = round((kwota_koncowa-kwota_koncowa_zlote)*100); // oblicz czesc ulamkowa i zamien na grosze i zaokraglij
   
   printf("Kwota do wyplaty: %lf, %d.%d\n", kwota_koncowa, kwota_koncowa_zlote, kwota_koncowa_grosze);
-  printf("Kwota do wyplaty slownie: %s zl %s gr\n", liczbaSlownie (kwota_koncowa_zlote,zlote_slownie), liczbaSlownie (kwota_koncowa_grosze, grosze_slownie));
+  printf("Kwota do wyplaty slownie: %s zl %s gr\n", liczbaSlownie (kwota_koncowa_zlote, zlote_slownie), liczbaSlownie (kwota_koncowa_grosze, grosze_slownie));
   
   
   getchar();
